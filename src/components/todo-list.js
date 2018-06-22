@@ -13,7 +13,7 @@ class TodoList extends Component {
         return(
             <div className="todo-list-main">
                 <input type="text"/>
-                <button></button>
+                <button>Add task</button>
             </div>
         )
     }
