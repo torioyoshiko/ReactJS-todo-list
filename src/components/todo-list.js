@@ -32,6 +32,7 @@ class TodoList extends Component {
                         onChange={(evt) => this.changeInput(evt.target.value)}
                         type="text"
                         value={this.state.userInput}
+                        placeholder="Type your task"
                     />
                     <button
                         onClick={() => this.addTask(this.state.userInput)}>
