@@ -1,5 +1,44 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Calibri;
+}
+
+.todo-list-main {
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  width: 400px;
+  background-color: #9370DB;
+  border-radius: 25px;
+}
+
+.input-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  background-color: #ab8cea;
+  border-radius: 15px;
+}
+
+.input-button input {
+  background-color: #cccccf;
+  width: 250px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+.input-button button {
+  width: 100px;
+  height: 25px;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.list-todo ul li{
+  margin-right: 45px;
+  word-wrap: break-word;
 }

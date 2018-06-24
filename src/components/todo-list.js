@@ -27,15 +27,22 @@ class TodoList extends Component {
     render () {
         return(
             <div className="todo-list-main">
-                <input
-                    onChange={(evt) => this.changeInput(evt.target.value)}
-                    type="text"
-                    value={this.state.userInput}
-                />
-                <button onClick={() => this.addTask(this.state.userInput)}>Add task</button>
-                <ul>
-                    {this.state.list.map((value)=><li>{value}</li>)}
-                </ul>
+                <div className="input-button">
+                    <input
+                        onChange={(evt) => this.changeInput(evt.target.value)}
+                        type="text"
+                        value={this.state.userInput}
+                    />
+                    <button
+                        onClick={() => this.addTask(this.state.userInput)}>
+                        Add task
+                    </button>
+                </div>
+                <div className="list-todo">
+                    <ul>
+                        {this.state.list.map((value) => <li type="none">{value}</li>)}
+                    </ul>
+                </div>
             </div>
         )
     }
