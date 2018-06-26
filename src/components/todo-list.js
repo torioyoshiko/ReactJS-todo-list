@@ -41,7 +41,7 @@ class TodoList extends Component {
                 </div>
                 <div className="list-todo">
                     <ul>
-                        {this.state.list.map((value) => <li type="none">{value}</li>)}
+                        {this.state.list.map((value) => <li>{value}</li>)}
                     </ul>
                 </div>
             </div>
